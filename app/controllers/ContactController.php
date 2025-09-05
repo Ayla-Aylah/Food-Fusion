@@ -44,7 +44,7 @@ public function contactUs() {
         if (!empty($data['email']) && !filter_var($data['email'], FILTER_VALIDATE_EMAIL)) {
             $errors['email'] = 'Invalid email format.';
         }
-        $recaptchaSecret = '6LeiYnMrAAAAABebA9WxicO0kBYgBswRhzNdf7jx';
+        $recaptchaSecret = '---';
         $recaptchaResponse = $_POST['g-recaptcha-response'] ?? '';
 
         if (empty($recaptchaResponse)) {
