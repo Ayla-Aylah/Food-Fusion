@@ -1,0 +1,11 @@
+RewriteEngine On
+RewriteBase /foodfusion/public/
+
+# Don't rewrite real files or directories
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+# Redirect all others to index.php
+
+RewriteRule ^ index.php [QSA,L]

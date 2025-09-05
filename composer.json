@@ -1,0 +1,17 @@
+{
+    "name": "user/foodfusion",
+    "autoload": {
+        "psr-4": {
+            "AdminController\\": "admin/controllers/",
+            "AdminModel\\": "admin/models/",
+            "Controller\\": "app/controllers/",
+            "Model\\": "app/models/",
+            "db\\": "config/"
+        }
+    },
+    "authors": [{
+        "name": "Thinzar Kyaw",
+        "email": "thinzar582007@gmail.com"
+    }],
+    "require": {}
+}
