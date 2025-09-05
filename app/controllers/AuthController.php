@@ -160,7 +160,7 @@ class AuthController {
     // Validation
     if (empty($identifier)) $errors['identifier'] = 'Username or email is required.';
     if (empty($password)) $errors['password'] = 'Password is required.';
-     $recaptchaSecret = '6LeiYnMrAAAAABebA9WxicO0kBYgBswRhzNdf7jx';
+     $recaptchaSecret = '---';
         $recaptchaResponse = $_POST['g-recaptcha-response'] ?? '';
 
         if (empty($recaptchaResponse)) {
