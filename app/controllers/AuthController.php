@@ -77,7 +77,7 @@ class AuthController {
             $errors['terms'] = 'You must agree to the terms and conditions.';
         }
 
-        $recaptchaSecret = '6LeiYnMrAAAAABebA9WxicO0kBYgBswRhzNdf7jx';
+        $recaptchaSecret = '---';
         $recaptchaResponse = $_POST['g-recaptcha-response'] ?? '';
 
         if (empty($recaptchaResponse)) {
